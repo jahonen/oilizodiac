@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Löydä Täydellinen Oliiviöljy | Peloponnesos Horoskoopit</title>
+    <link rel="canonical" href="https://oilizodiac.web.app/">
+    <meta name="description" content="Löydä horoskooppisi perusteella juuri sinulle sopiva oliiviöljy. Yhdistä länsimainen ja kiinalainen horoskooppi ja saat suosituksen: oliivi, oliiviöljy, horoskooppi – kaikki yhdessä leikkisällä otteella.">
+    <meta name="keywords" content="oliivi, oliiviöljy, horoskooppi, kreikkalainen oliiviöljy, peloponnesos, extra virgin, EVÖL, oliivilajike, Koroneiki, Manaki">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Täydellinen oliiviöljy – Peloponnesos Horoskoopit">
+    <meta property="og:description" content="Löydä horoskooppisi perusteella sinulle sopiva oliivilajike.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oilizodiac.web.app/">
+    <meta property="og:image" content="https://oilizodiac.web.app/assets/images/og_image.png">
+    <meta property="og:locale" content="fi_FI">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Täydellinen oliiviöljy – Peloponnesos Horoskoopit">
+    <meta name="twitter:description" content="Yhdistä merkit ja löydä suosikkisi.">
+    <meta name="twitter:image" content="https://oilizodiac.web.app/assets/images/og_image.png">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Peloponnesos Horoskoopit – Löydä Täydellinen Oliiviöljy",
+      "url": "https://oilizodiac.web.app/",
+      "inLanguage": "fi",
+      "description": "Löydä horoskooppien avulla oma oliiviöljysi. Avainsanat: oliivi, oliiviöljy, horoskooppi.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "OiliShop",
+        "url": "https://oilishop.fi/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://oilizodiac.web.app/assets/images/Oili-large-raster-transparent.png"
+        }
+      }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: linear-gradient(to bottom, #f8f5f0 0%, #e8e3d8 100%);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+            color: #f4e8d0;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '🫒';
+            position: absolute;
+            font-size: 120px;
+            opacity: 0.1;
+            top: -20px;
+            right: -20px;
+            transform: rotate(15deg);
+        }
+
+        .header::after {
+            content: '🫒';
+            position: absolute;
+            font-size: 120px;
+            opacity: 0.1;
+            bottom: -20px;
+            left: -20px;
+            transform: rotate(-15deg);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            font-style: italic;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .quiz-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #2d5016;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+            border: 2px solid #4a7c2c;
+            border-radius: 10px;
+            background: #fefefe;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Georgia', serif;
+        }
+
+        select:hover {
+            border-color: #2d5016;
+            box-shadow: 0 2px 8px rgba(45, 80, 22, 0.2);
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #2d5016;
+            box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 18px;
+            font-size: 1.3em;
+            background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%);
+            color: #f4e8d0;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(45, 80, 22, 0.3);
+            font-family: 'Georgia', serif;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(45, 80, 22, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .result {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, #fff9e6 0%, #f4e8d0 100%);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 3px solid #4a7c2c;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .olive-icon {
+            font-size: 80px;
+            text-align: center;
+            margin-bottom: 20px;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+        }
+
+        .variety-name {
+            font-size: 2.5em;
+            color: #2d5016;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .description {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .description:last-child {
+            margin-bottom: 0;
+        }
+
+        .cta-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+        }
+
+        .reset-btn {
+            margin-top: 20px;
+            background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+        }
+
+        .emoji-decoration {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .subtitle {
+                font-size: 1em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .quiz-section {
+                padding: 20px;
+            }
+
+            .variety-name {
+                font-size: 2em;
+            }
+        }
+
+        .zodiac-combo {
+            text-align: center;
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #4a7c2c;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4a7c2c;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: #f0f0f0;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.08) inset;
+            transition: transform 0.15s ease;
+        }
+        .share-btn:hover { transform: translateY(-2px); }
+        .share-btn img { width: 22px; height: 22px; display: block; }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="https://oilishop.fi/" target="_blank" rel="noopener noreferrer" style="display:block; text-align:center; margin-bottom:16px;">
+                <img src="/assets/images/Oili-large-raster-transparent.png" alt="Oilishop logo" style="max-width:150px; max-height:150px; width:auto; height:auto; display:inline-block;" />
+            </a>
+            <h1>🫒 Täydellinen Oliiviöljy 🫒</h1>
+            <p class="subtitle">Peloponnesoksen Tähtiopas</p>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <p><strong>Tervetuloa tähtitaivaan ja oliiviöljyn kohtaamiseen!</strong></p>
+                <p>Yhdistä läntinen ja kiinalainen horoskooppisi löytääksesi juuri sinulle sopivan oliivilajikkeen Peloponnesokselta.</p>
+            </div>
+
+            <div id="quiz" class="quiz-form">
+                <div class="quiz-section">
+                    <label for="western">Valitse läntinen horoskooppisi:</label>
+                    <select id="western">
+                        <option value="">-- Valitse tähtimerkki --</option>
+                        <option value="Oinas">♈ Oinas (21.3 - 19.4)</option>
+                        <option value="Härkä">♉ Härkä (20.4 - 20.5)</option>
+                        <option value="Kaksoset">♊ Kaksoset (21.5 - 21.6)</option>
+                        <option value="Rapu">♋ Rapu (22.6 - 22.7)</option>
+                        <option value="Leijona">♌ Leijona (23.7 - 22.8)</option>
+                        <option value="Neitsyt">♍ Neitsyt (23.8 - 22.9)</option>
+                        <option value="Vaaka">♎ Vaaka (23.9 - 23.10)</option>
+                        <option value="Skorpioni">♏ Skorpioni (24.10 - 21.11)</option>
+                        <option value="Jousimies">♐ Jousimies (22.11 - 21.12)</option>
+                        <option value="Kauris">♑ Kauris (22.12 - 19.1)</option>
+                        <option value="Vesimies">♒ Vesimies (20.1 - 18.2)</option>
+                        <option value="Kalat">♓ Kalat (19.2 - 20.3)</option>
+                    </select>
+                </div>
+
+                <div class="quiz-section">
+                    <label for="chinese">Valitse kiinalainen eläimesi:</label>
+                    <select id="chinese">
+                        <option value="">-- Valitse syntymävuotesi eläin --</option>
+                        <option value="Rotta">🐀 Rotta (2020, 2008, 1996, 1984, 1972, 1960)</option>
+                        <option value="Härkä">🐂 Härkä (2021, 2009, 1997, 1985, 1973, 1961)</option>
+                        <option value="Tiikeri">🐅 Tiikeri (2022, 2010, 1998, 1986, 1974, 1962)</option>
+                        <option value="Kaniini">🐇 Kaniini (2023, 2011, 1999, 1987, 1975, 1963)</option>
+                        <option value="Lohikäärme">🐉 Lohikäärme (2024, 2012, 2000, 1988, 1976, 1964)</option>
+                        <option value="Käärme">🐍 Käärme (2025, 2013, 2001, 1989, 1977, 1965)</option>
+                        <option value="Hevonen">🐎 Hevonen (2014, 2002, 1990, 1978, 1966)</option>
+                        <option value="Vuohi">🐐 Vuohi (2015, 2003, 1991, 1979, 1967)</option>
+                        <option value="Apina">🐒 Apina (2016, 2004, 1992, 1980, 1968)</option>
+                        <option value="Kukko">🐓 Kukko (2017, 2005, 1993, 1981, 1969)</option>
+                        <option value="Koira">🐕 Koira (2018, 2006, 1994, 1982, 1970)</option>
+                        <option value="Sika">🐖 Sika (2019, 2007, 1995, 1983, 1971)</option>
+                    </select>
+                </div>
+
+                <button class="btn" id="submitBtn" onclick="findOlive()">
+                    <span class="emoji-decoration">✨</span>
+                    Löydä Oliiviöljyni
+                    <span class="emoji-decoration">✨</span>
+                </button>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Analysoidaan tähtikuviota...</p>
+            </div>
+
+            <div class="result" id="result">
+                <div class="result-card">
+                    <div class="olive-icon">🫒</div>
+                    <div class="zodiac-combo" id="zodiacCombo"></div>
+                    <h2 class="variety-name" id="varietyName"></h2>
+                    <div id="descriptions"></div>
+
+                    <div class="share-buttons" id="shareButtons" aria-label="Jaa tulos" title="Jaa tulos">
+                        <a id="shareFb" class="share-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Jaa Facebookissa">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="#1877F2" aria-hidden="true"><path d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.01 3.66 9.17 8.44 9.94v-7.03H8.08v-2.9h2.36V9.41c0-2.33 1.39-3.62 3.52-3.62.99 0 2.03.18 2.03.18v2.23h-1.15c-1.13 0-1.48.7-1.48 1.42v1.71h2.52l-.4 2.9h-2.12V22c4.78-.77 8.44-4.93 8.44-9.94z"/></svg>
+                        </a>
+                        <a id="shareTw" class="share-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Jaa X:ssä (Twitter)">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="#000" aria-hidden="true"><path d="M18.244 2h3.169l-6.92 7.91 8.107 11.09H16.36l-5.05-6.6-5.78 6.6H1.97l7.4-8.45L1.6 2h6.88l4.56 6.04L18.244 2zm-1.11 18h1.75L7.02 3.06H5.16l11.974 16.94z"/></svg>
+                        </a>
+                        <a id="shareBsky" class="share-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Jaa Blueskyssa">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="#1185FE" aria-hidden="true"><path d="M12 10.6c2.6-4.7 6.3-7.2 8.1-7.2 1.1 0 1.4.8 1.4 1.6 0 1.8-1 3.9-1.7 5.1-.9 1.6-2.3 3.5-3.6 4.6 1.7-.2 3.6-.6 5.3-1.1-.9 1.7-2.9 4.2-5.2 4.2-1.5 0-2.8-1-4.3-2.8-1.5 1.8-2.8 2.8-4.3 2.8-2.3 0-4.3-2.5-5.2-4.2 1.7.5 3.6.9 5.3 1.1-1.3-1.1-2.7-3-3.6-4.6C3.5 8 2.5 5.9 2.5 4.1c0-.8.3-1.6 1.4-1.6 1.8 0 5.5 2.5 8.1 7.2z"/></svg>
+                        </a>
+                        <a id="shareLn" class="share-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Jaa LinkedInissä">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="#0A66C2" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67H9.33V9h3.42v1.56h.05c.48-.9 1.66-1.86 3.41-1.86 3.65 0 4.33 2.4 4.33 5.53v6.22zM5.34 7.45a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22 2H2v20h20V2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h3 style="margin-bottom: 20px; color: #2d5016;">Haluatko maistaa?</h3>
+                    <p style="margin-bottom: 25px; color: #666;">Katso löytyisikö tätä tai jotain muuta jännittävää verkkokaupastamme!</p>
+                    <a href="https://oilishop.fi/" class="cta-btn" target="_blank" rel="noopener noreferrer">
+                        🛒 Tilaa Nyt
+                    </a>
+                    <br>
+                    <button class="btn reset-btn" onclick="resetQuiz()">
+                        Kokeile Uudelleen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Zodiac matching data
+        const oliveMatches = {
+            "Oinas-Rotta": {variety: "Koroneiki", desc: ["Olet kipinä, joka sytyttää tunnelman hetkessä.", "Tarvitset öljyn, joka pysyy vauhdissasi mukana.", "Koroneiki on rohkea, napakka ja monipuolinen – juuri sinun tyylinen."]},
+            "Oinas-Härkä": {variety: "Manaki", desc: ["Rohkeus kohtaa periksiantamattomuuden – melkoinen kaksikko.", "Öljy saa olla tasapainoinen ja jämäkkä.", "Manaki kantaa rauhallisesti läpi kiireenkin."]},
+            "Oinas-Tiikeri": {variety: "Koroneiki", desc: ["Tulta ja temppuja riittää.", "Tarvitset öljyn, joka vastaa liekkiisi.", "Koroneiki pitää intensiteetin raikkaana."]},
+            "Oinas-Kaniini": {variety: "Koroneiki+Manaki", desc: ["Kova kuori, pehmeä ydin – täydellinen kombo.", "Pieni pehmeys tekee terävyydelle hyvää.", "Koroneiki+Manaki löytää juuri oikean tasapainon."]},
+            "Oinas-Lohikäärme": {variety: "Koroneiki", desc: ["Iso sisäänmarssi kuuluu tyyliisi.", "Öljy saa olla näyttävä ja ryhdikäs.", "Koroneiki toimittaa draamaa lautaselle – hyvällä tavalla."]},
+            "Oinas-Käärme": {variety: "Manaki+Athinolia", desc: ["Nopea liike, tarkka mieli.", "Kaipaat kerroksia ilman raskauden tunnetta.", "Manaki+Athinolia tuo sekä syvyyttä että hienostuneisuutta."]},
+            "Oinas-Hevonen": {variety: "Koroneiki", desc: ["Vapaus on vakiovarusteesi.", "Tarvitset öljyn, joka ei hätkähdä laukkaa.", "Koroneiki pysyy rinnalla mutkitta."]},
+            "Oinas-Vuohi": {variety: "Koutsourelia", desc: ["Oma polku on paras polku.", "Vuoristolajikkeen sitkeys sopii sinulle.", "Koutsourelia on rehti ja riippumaton kumppani."]},
+            "Oinas-Apina": {variety: "Koroneiki+Kalamata", desc: ["Ideoita sinkoilee ja hauskuus tarttuu.", "Tarvitset öljyn, joka taipuu moneen.", "Koroneiki+Kalamata on leikkisä ja näyttävä pari."]},
+            "Oinas-Kukko": {variety: "Manaki", desc: ["Nostat riman ja teet sen tyylillä.", "Öljyssä maistuu huolellisuus ja tasapaino.", "Manaki on varma valinta tarkallekin maulle."]},
+            "Oinas-Koira": {variety: "Koroneiki+Manaki", desc: ["Lämmin ja lojaali, mutta skarppi.", "Sekoitus yhdistää voiman ja lempeyden.", "Koroneiki+Manaki on sopuisa tiimi."]},
+            "Oinas-Sika": {variety: "Manaki", desc: ["Sydämellinen nautiskelija.", "Tarvitset öljyn, joka on avoin ja runsas.", "Manaki tarjoilee reilun ja pehmeän elämyksen."]},
+            "Härkä-Rotta": {variety: "Manaki", desc: ["Jalat maassa, katse eteenpäin.", "Pidät harkinnasta enemmän kuin kiireestä.", "Manaki on pehmeä, tasapainoinen ja luotettava kumppani."]},
+            "Härkä-Härkä": {variety: "Manaki", desc: ["Vakaus on valttisi.", "Öljy saa olla selkeä ja rauhallinen.", "Manaki seisoo rinnallasi kuin vanha ystävä."]},
+            "Härkä-Tiikeri": {variety: "Koroneiki+Manaki", desc: ["Tyyni pinta, vahva virta.", "Kaipaat tasapainoa voiman ja pehmeyden väliin.", "Koroneiki+Manaki hoitaa molemmat."]},
+            "Härkä-Kaniini": {variety: "Manaki+Athinolia", desc: ["Lempeys ja laatu kulkevat käsi kädessä.", "Pidät hienovaraisesta viimeistelystä.", "Manaki+Athinolia on pehmeä ja siro pari."]},
+            "Härkä-Lohikäärme": {variety: "Koroneiki", desc: ["Rauhallisen kuoren alla on voimaa.", "Öljy saa tuoda ryhtiä ja syvyyttä.", "Koroneiki antaa napakan otteen lautaselle."]},
+            "Härkä-Käärme": {variety: "Manaki", desc: ["Kärsivällisyys palkitaan.", "Pidät makujen rauhallisesta kypsymisestä.", "Manaki on lempeä ja harkittu valinta."]},
+            "Härkä-Hevonen": {variety: "Koroneiki+Manaki", desc: ["Vapaus maistuu parhaimmalta selkeissä raameissa.", "Tarvitset öljyn, jossa on sekä selkänoja että liike.", "Koroneiki+Manaki pitää suunnan ja jouston."]},
+            "Härkä-Vuohi": {variety: "Manaki+Kalamata", desc: ["Kauneus ja käytäntö samassa paketissa.", "Pidät lämpimästä, helposti lähestyttävästä mausta.", "Manaki+Kalamata tuo sekä sävyn että särmän."]},
+            "Härkä-Apina": {variety: "Manaki", desc: ["Leikkisyys kaipaa rauhallista vastaparia.", "Öljy pysyy mukana, vaikka idea vaihtuu.", "Manaki on varma ankkuri."]},
+            "Härkä-Kukko": {variety: "Athinolia", desc: ["Rakastat selkeyttä ja huolellisuutta.", "Pienet yksityiskohdat merkitsevät.", "Athinolia on siisti ja tarkka – kuin sinäkin."]},
+            "Härkä-Koira": {variety: "Manaki", desc: ["Luotettavuus on supervoimasi.", "Öljy saa olla rehti ja lämmin.", "Manaki on yhtä uskollinen kuin sinä."]},
+            "Härkä-Sika": {variety: "Koroneiki+Manaki", desc: ["Nautinto saa olla runsasta, mutta tasapainoista.", "Kaipaat luonnetta ilman liikaa painoa.", "Koroneiki+Manaki hoitaa homman tyylillä."]},
+            "Kaksoset-Rotta": {variety: "Koroneiki", desc: ["Ideat vaihtuvat vauhdilla.", "Öljy saa olla ketterä ja monipuolinen.", "Koroneiki joustaa suuntaan kuin suuntaan."]},
+            "Kaksoset-Härkä": {variety: "Nemoutiana", desc: ["Kaaos kohtaa järjestyksen – juuri sopivasti.", "Pidät makujen kerroksista.", "Nemoutiana tuo syvyyttä ja selkeyttä samaan aikaan."]},
+            "Kaksoset-Tiikeri": {variety: "Koroneiki+Athinolia", desc: ["Sekä että – ja juuri siksi kiehtova.", "Kaipaat terävyyttä ja silti pehmeyttä.", "Koroneiki+Athinolia tasapainottaa kauniisti."]},
+            "Kaksoset-Kaniini": {variety: "Manaki+Athinolia", desc: ["Uteliaisuus on pehmeää ja tarkkaa yhtä aikaa.", "Pidät jalostuneesta sävystä.", "Manaki+Athinolia yhdistää älyn ja sirouden."]},
+            "Kaksoset-Lohikäärme": {variety: "Koroneiki+Manaki", desc: ["Karisma kiertää kehää, eikä vauhti lopu.", "Öljyssä saa olla sisältöä.", "Koroneiki+Manaki tuo sekä draamaa että syvyyttä."]},
+            "Kaksoset-Käärme": {variety: "Koroneiki+Manaki", desc: ["Nopeus ja suunnitelma mahtuvat samaan lauseeseen.", "Pidät kerroksista ja yllätyksestä.", "Koroneiki+Manaki rakentaa fiksun kokonaisuuden."]},
+            "Kaksoset-Hevonen": {variety: "Koroneiki", desc: ["Uteliaisuus vie, ja hyvä niin.", "Öljy pysyy rinnalla ilman säätöä.", "Koroneiki on notkea moniosaaja."]},
+            "Kaksoset-Vuohi": {variety: "Manaki", desc: ["Tyyli vaihtuu, mutta hyvä maku pysyy.", "Kaipaat vivahteita ilman sotkua.", "Manaki tuo lempeää sävykkyyttä."]},
+            "Kaksoset-Apina": {variety: "Koroneiki", desc: ["Nokkelaa kekseliäisyyttä.", "Öljy saa olla valpas ja muuntautuva.", "Koroneiki pitää idearytmin mukana."]},
+            "Kaksoset-Kukko": {variety: "Koroneiki+Manaki", desc: ["Sana on vapaa – ja hyvin jäsennelty.", "Kaipaat sisältöä puheen rinnalle.", "Koroneiki+Manaki antaa sekä selkeyttä että voimaa."]},
+            "Kaksoset-Koira": {variety: "Manaki", desc: ["Juttuseura parhaasta päästä.", "Öljy saa olla pehmeä ja helppo.", "Manaki on lämmin ja mutkaton kumppani."]},
+            "Kaksoset-Sika": {variety: "Koroneiki+Manaki", desc: ["Seurassa kukkii.", "Kaipaat makua, joka toimii monelle.", "Koroneiki+Manaki on yleisön lemppari syystä."]},
+            "Rapu-Rotta": {variety: "Manaki", desc: ["Sydän kuulee ennen kuin korvat.", "Öljy saa olla lempeä ja vivahteikas.", "Manaki syleilee pehmeästi."]},
+            "Rapu-Härkä": {variety: "Manaki", desc: ["Tunnet ja pysyt tyynenä.", "Kaipaat makua, joka maadoittaa.", "Manaki on lämmin ja rauhoittava."]},
+            "Rapu-Tiikeri": {variety: "Koroneiki+Manaki", desc: ["Pehmeä sydän, vahva kuori.", "Kaipaat sekä lämpöä että luonnetta.", "Koroneiki+Manaki yhdistää molemmat."]},
+            "Rapu-Kaniini": {variety: "Manaki", desc: ["Herkkä ja hellä.", "Öljy saa olla pehmeä kuin viltti.", "Manaki lohduttaa lempeästi."]},
+            "Rapu-Lohikäärme": {variety: "Koroneiki+Manaki", desc: ["Syvyys pysyy kasassa hyvällä pohjalla.", "Kaipaat öljyä, jossa on selkeä runko.", "Koroneiki+Manaki rakentaa turvallisen kehyksen."]},
+            "Rapu-Käärme": {variety: "Manaki+Athinolia", desc: ["Aistit vivahteet herkästi.", "Pidät hienosta viimeistelystä.", "Manaki+Athinolia on lempeä ja elegantti."]},
+            "Rapu-Hevonen": {variety: "Koroneiki+Manaki", desc: ["Vapaus tuntuu parhaimmalta, kun olo on turvallinen.", "Kaipaat makua, joka ankkuroi.", "Koroneiki+Manaki pitää lämmön ja ryhdin."]},
+            "Rapu-Vuohi": {variety: "Manaki", desc: ["Olet hoivaava luova, joka tekee taidetta tunteista.", "Tarvitset käsityöläisen huolellisuutta.", "Manaki artesaaninen huolenpito vastaa luovaa herkkyttäsi."]},
+            "Rapu-Apina": {variety: "Manaki+Kalamata", desc: ["Lämmin sydän ja hyvä seura.", "Kaipaat makua, joka jutustelee.", "Manaki+Kalamata on hurmaava kaksikko."]},
+            "Rapu-Kukko": {variety: "Manaki", desc: ["Koti on paras, kun se maistuu hyvältä.", "Laadun pitää tuntua luontevalta.", "Manaki tekee olon kotoisaksi."]},
+            "Rapu-Koira": {variety: "Manaki", desc: ["Uskollisuus näkyy maussa asti.", "Pidät rehdistä, aidosta mausta.", "Manaki on vilpitön ja lämmin."]},
+            "Rapu-Sika": {variety: "Manaki", desc: ["Anteliaisuus on valttikorttisi.", "Kaipaat runsautta, joka ei käy raskaaksi.", "Manaki on juuri sopivan yltäkylläinen."]},
+            "Leijona-Rotta": {variety: "Koroneiki", desc: ["Astut sisään – ja kaikki huomaavat.", "Öljy saa olla ryhdikäs ja vaikuttava.", "Koroneiki kantaa kruunun kevyesti."]},
+            "Leijona-Härkä": {variety: "Koroneiki+Manaki", desc: ["Voimaa ja varmuutta samassa.", "Kaipaat syvyyttä ilman raskautta.", "Koroneiki+Manaki on kuninkaallinen tasapaino."]},
+            "Leijona-Tiikeri": {variety: "Koroneiki", desc: ["Tulta ja karismaa riittää.", "Öljy saa olla rohkea ja suora.", "Koroneiki pitää liekin hallittuna."]},
+            "Leijona-Kaniini": {variety: "Koroneiki+Manaki", desc: ["Säteilet ja silti huomioit muut.", "Kaipaat voimaa, mutta pehmeästi.", "Koroneiki+Manaki tarjoaa arvokkuutta ja lempeyttä."]},
+            "Leijona-Lohikäärme": {variety: "Kalamata", desc: ["Esityksessäsi on näyttävyyttä.", "Pidät arvokkaasta viimeistelystä.", "Kalamata tuo pöytään juhlan tuntua."]},
+            "Leijona-Käärme": {variety: "Koroneiki+Athinolia", desc: ["Älykäs ote ja tyylikäs toteutus.", "Kaipaat hienostunutta särmää.", "Koroneiki+Athinolia on fiksu ja elegantti pari."]},
+            "Leijona-Hevonen": {variety: "Koroneiki", desc: ["Vapaus on kruunukalleutesi.", "Öljy saa olla suoraselkäinen.", "Koroneiki antaa voimaa liikkeeseen."]},
+            "Leijona-Vuohi": {variety: "Koroneiki+Kalamata", desc: ["Luovuus ansaitsee näyttämön.", "Pidät makuparista, joka huomataan.", "Koroneiki+Kalamata tekee vaikutuksen."]},
+            "Leijona-Apina": {variety: "Kalamata", desc: ["Leikkisyys ja esiintyminen sopivat yhteen.", "Pidät näyttävästä sävystä.", "Kalamata tuo lautaselle näyttävyyttä."]},
+            "Leijona-Kukko": {variety: "Koroneiki", desc: ["Laatutaju on terävä.", "Haluat selkeän, vahvan maun.", "Koroneiki täyttää vaatimukset."]},
+            "Leijona-Koira": {variety: "Koroneiki+Manaki", desc: ["Johtajuus ja lempeys samassa paketissa.", "Kaipaat lämpöä ja ryhtiä.", "Koroneiki+Manaki yhdistää molemmat."]},
+            "Leijona-Sika": {variety: "Koroneiki+Manaki", desc: ["Anteliaisuus on tyylikästä.", "Pidät runsaudesta, joka pysyy muodossa.", "Koroneiki+Manaki on juhlava ja lämmin."]},
+            "Neitsyt-Rotta": {variety: "Athinolia", desc: ["Pidät siitä, että kaikki on kohdallaan.", "Öljy saa olla siisti ja täsmällinen.", "Athinolia on tarkka ja elegantti – aivan kuin sinäkin."]},
+            "Neitsyt-Härkä": {variety: "Athinolia", desc: ["Laatu on lempikielesi.", "Kaipaat huolellisesti hiottua makua.", "Athinolia on napakka ja viimeistelty valinta."]},
+            "Neitsyt-Tiikeri": {variety: "Koroneiki+Athinolia", desc: ["Terävä katse ja jämäkkä toteutus.", "Kaipaat sekä ryhtiä että täsmällisyyttä.", "Koroneiki+Athinolia tasapainottaa voiman ja tarkkuuden."]},
+            "Neitsyt-Kaniini": {variety: "Athinolia", desc: ["Hienostunut, mutta lämmin.", "Pidät puhtaasta, elegantista mausta.", "Athinolia viimeistelee kokonaisuuden kauniisti."]},
+            "Neitsyt-Lohikäärme": {variety: "Koroneiki+Athinolia", desc: ["Tavoittelet parasta – rennosti.", "Kaipaat sisältöä ilman raskaaksi käymistä.", "Koroneiki+Athinolia on täsmällinen ja vaikuttava pari."]},
+            "Neitsyt-Käärme": {variety: "Athinolia", desc: ["Näet vivahteet, joita muut eivät huomaa.", "Pidät hienovaraisesta kerroksellisuudesta.", "Athinolia on älykäs ja siro valinta."]},
+            "Neitsyt-Hevonen": {variety: "Manaki+Athinolia", desc: ["Tarkkuus ja vapaus voivat olla kavereita.", "Kaipaat selkeyttä, mutta tilaa liikkua.", "Manaki+Athinolia yhdistää molemmat tyylillä."]},
+            "Neitsyt-Vuohi": {variety: "Manaki", desc: ["Pidät tekemisen tunteesta.", "Kaipaat lempeää ja tasapainoista makua.", "Manaki on huolellinen ja lämmin kumppani."]},
+            "Neitsyt-Apina": {variety: "Koroneiki+Athinolia", desc: ["Nopea pää ja siisti jälki.", "Kaipaat monipuolisuutta ilman sekavuutta.", "Koroneiki+Athinolia on fiksu ja selkeä pari."]},
+            "Neitsyt-Kukko": {variety: "Athinolia", desc: ["Täsmällisyys on juhlaa.", "Pidät laadusta, joka tuntuu.", "Athinolia täyttää toiveen tinkimättä."]},
+            "Neitsyt-Koira": {variety: "Manaki+Athinolia", desc: ["Huolehtiva ja tarkka – kaunis yhdistelmä.", "Kaipaat laatua, jossa on sydän mukana.", "Manaki+Athinolia on lämmin ja viimeistelty."]},
+            "Neitsyt-Sika": {variety: "Manaki+Athinolia", desc: ["Sekä tarkkuutta että anteliaisuutta, kiitos.", "Pidät harmonisesta kokonaisuudesta.", "Manaki+Athinolia tekee siitä helppoa."]},
+            "Vaaka-Rotta": {variety: "Koroneiki+Manaki", desc: ["Tasapaino on lajisi.", "Kaipaat makua, joka sovittelee.", "Koroneiki+Manaki löytää yhteisen sävelen."]},
+            "Vaaka-Härkä": {variety: "Manaki+Athinolia", desc: ["Harmonia ja vakaus viihtyvät yhdessä.", "Pidät jalostuneesta pehmeydestä.", "Manaki+Athinolia on tyylikäs tasapaino."]},
+            "Vaaka-Tiikeri": {variety: "Koroneiki+Athinolia", desc: ["Voimaa sopivalla keveydellä.", "Kaipaat särmää, joka ei terävöidy liikaa.", "Koroneiki+Athinolia on elegantti ja napakka."]},
+            "Vaaka-Kaniini": {variety: "Manaki+Athinolia", desc: ["Kaunis tasapaino kahdella sävyllä.", "Pidät pehmeästä selkeydestä.", "Manaki+Athinolia piirtää siistin linjan."]},
+            "Vaaka-Lohikäärme": {variety: "Kalamata", desc: ["Pidät näyttävistä hetkistä.", "Öljy saa olla myös katseenvangitsija.", "Kalamata tuo pöytään juhlan."]},
+            "Vaaka-Käärme": {variety: "Manaki+Athinolia", desc: ["Hienovarainen, mutta päättäväinen.", "Kaipaat linjakasta tuntumaa.", "Manaki+Athinolia kestää katseen läheltäkin."]},
+            "Vaaka-Hevonen": {variety: "Koroneiki+Manaki", desc: ["Vapaa, mutta hallittu.", "Kaipaat luonnetta, joka sopii moneen.", "Koroneiki+Manaki pitää rytmin pehmeänä."]},
+            "Vaaka-Vuohi": {variety: "Lianolia", desc: ["Taiteellinen ote, pehmeä viimeistely.", "Pidät diplomaattisesta sävystä.", "Lianolia on silkkinen ja lempeä."]},
+            "Vaaka-Apina": {variety: "Koroneiki+Kalamata", desc: ["Seurallinen ja vikkelä.", "Kaipaat makua, joka hurmaa.", "Koroneiki+Kalamata on hurmaava duo."]},
+            "Vaaka-Kukko": {variety: "Koroneiki+Athinolia", desc: ["Tasapaino syntyy huolellisuudesta.", "Pidät tarkasta, mutta lempeästä otteesta.", "Koroneiki+Athinolia yhdistää molemmat."]},
+            "Vaaka-Koira": {variety: "Manaki", desc: ["Reilu peli ja lämmin mieli.", "Kaipaat avointa, suoraa makua.", "Manaki on vilpitön ja helppo lähestyä."]},
+            "Vaaka-Sika": {variety: "Koroneiki+Manaki", desc: ["Harmoninen ja antelias.", "Pidät runsaudesta, joka pysyy paketissa.", "Koroneiki+Manaki pitää kokonaisuuden kauniina."]},
+            "Skorpioni-Rotta": {variety: "Koroneiki", desc: ["Katse läpäisee – maku saa vastata.", "Kaipaat voimakasta luonnetta.", "Koroneiki on vahva ja selkeä kumppani."]},
+            "Skorpioni-Härkä": {variety: "Koroneiki+Manaki", desc: ["Syvä ja vakaa – hyvä yhdistelmä.", "Kaipaat ryhtiä, jossa on lämpöä.", "Koroneiki+Manaki tuo molemmat esiin."]},
+            "Skorpioni-Tiikeri": {variety: "Koroneiki", desc: ["Intensiteetti on tavaramerkki.", "Öljy saa olla jämäkkä ja suora.", "Koroneiki kantaa voiman vaivatta."]},
+            "Skorpioni-Kaniini": {variety: "Koroneiki+Manaki", desc: ["Syvä, mutta lempeä.", "Pidät kerroksista, jotka istuvat kauniisti.", "Koroneiki+Manaki on vahva ja pehmeä yhtä aikaa."]},
+            "Skorpioni-Lohikäärme": {variety: "Koroneiki", desc: ["Muuttaudut hetkessä – maku pysyy mukana.", "Kaipaat rohkeaa otetta.", "Koroneiki tuo selkeän intensiteetin."]},
+            "Skorpioni-Käärme": {variety: "Manaki", desc: ["Hillitön kiinnostavuus, mutta harkiten.", "Pidät harvinaisesta pehmeydestä.", "Manaki on salaperäinen, muttei raskas."]},
+            "Skorpioni-Hevonen": {variety: "Koroneiki", desc: ["Vapaus puskee läpi kunnolla.", "Kaipaat vahvaa perustaa maun alle.", "Koroneiki antaa ryhtiä liikkeeseen."]},
+            "Skorpioni-Vuohi": {variety: "Koroneiki+Manaki", desc: ["Luovuus tuntuu syvällä.", "Kaipaat rakennetta, joka kantaa ideat.", "Koroneiki+Manaki tekee kokonaisuudesta vahvan."]},
+            "Skorpioni-Apina": {variety: "Koroneiki+Manaki", desc: ["Älykäs liike ja hetken oivallus.", "Öljy pysyy mukana käännöksissä.", "Koroneiki+Manaki on terävä ja notkea."]},
+            "Skorpioni-Kukko": {variety: "Koroneiki", desc: ["Pikkutarkka ja ylpeä.", "Kaipaat laatua, joka seisoo suorassa.", "Koroneiki vastaa tasoon ilman kompromisseja."]},
+            "Skorpioni-Koira": {variety: "Koroneiki+Manaki", desc: ["Uskollinen ytimeen saakka.", "Pidät mausta, jossa on sekä voimaa että lämpöä.", "Koroneiki+Manaki tuo sydämen ja luonteen."]},
+            "Skorpioni-Sika": {variety: "Koroneiki+Manaki", desc: ["Kun annat, annat kunnolla.", "Kaipaat runsautta, joka pysyy hallussa.", "Koroneiki+Manaki tekee siitä tasapainoista."]},
+            "Jousimies-Rotta": {variety: "Koroneiki", desc: ["Suunta on eteenpäin – ja vähän sivulle.", "Öljy saa olla joustava ja rohkea.", "Koroneiki seikkailee mukanasi."]},
+            "Jousimies-Härkä": {variety: "Koutsourelia", desc: ["Ajatus kulkee pitkälle, askel vakaasti.", "Kaipaat vuoristolajikkeen rauhaa.", "Koutsourelia tuo näkökulmaa ja selkeyttä."]},
+            "Jousimies-Tiikeri": {variety: "Koroneiki", desc: ["Vapaus palaa kirkkaana.", "Kaipaat vahvaa ja suoraa makua.", "Koroneiki seisoo rinnalla pelotta."]},
+            "Jousimies-Kaniini": {variety: "Koroneiki+Manaki", desc: ["Seikkailu hymyillen.", "Kaipaat makua, johon on helppo tarttua.", "Koroneiki+Manaki on rohkea mutta lempeä."]},
+            "Jousimies-Lohikäärme": {variety: "Koroneiki", desc: ["Visio venyy pitkälle.", "Kaipaat makua, jossa on johtajuutta.", "Koroneiki tuo selkeyttä ja voimaa."]},
+            "Jousimies-Käärme": {variety: "Koroneiki+Manaki", desc: ["Syvälle sukeltava ajatus ja kevyt askel.", "Pidät kerroksellisesta mausta.", "Koroneiki+Manaki rakentaa rikkaan kokonaisuuden."]},
+            "Jousimies-Hevonen": {variety: "Koutsourelia", desc: ["Vapaus x 2.", "Kaipaat itsenäistä, rauhallista pohjaa.", "Koutsourelia sopii vapaalle mielelle."]},
+            "Jousimies-Vuohi": {variety: "Manaki", desc: ["Seikkailu kaipaa laatua.", "Pidät vuoriston rauhallisesta luonteesta.", "Manaki antaa selkeän profiilin."]},
+            "Jousimies-Apina": {variety: "Koroneiki", desc: ["Leikkisyys löytää aina reitin.", "Kaipaat joustavaa, elävää makua.", "Koroneiki taipuu uusiin ideoihin."]},
+            "Jousimies-Kukko": {variety: "Koroneiki+Athinolia", desc: ["Etsit laatua – myös matkalla.", "Kaipaat selkeää, viimeisteltyä makua.", "Koroneiki+Athinolia on rehti ja elegantti."]},
+            "Jousimies-Koira": {variety: "Koroneiki+Manaki", desc: ["Uskollinen ja utelias – mainio pari.", "Kaipaat lämpöä ja voimaa.", "Koroneiki+Manaki kulkee vierellä pitkälle."]},
+            "Jousimies-Sika": {variety: "Koroneiki+Manaki", desc: ["Löydöt jaetaan ilolla.", "Pidät runsaasta, mutta rennosta otteesta.", "Koroneiki+Manaki tuo seikkailuun lämpöä."]},
+            "Kauris-Rotta": {variety: "Koroneiki+Manaki", desc: ["Määrätietoinen ja älykäs – rakennat kestävää.", "Öljy saa olla jäsennelty mutta lämmin.", "Koroneiki+Manaki yhdistää voiman ja selkeyden."]},
+            "Kauris-Härkä": {variety: "Manaki", desc: ["Kaksi maamerkkiä, sama vakaus.", "Kaipaat selkeää, luotettavaa makua.", "Manaki seisoo paikallaan kuin vuori."]},
+            "Kauris-Tiikeri": {variety: "Koroneiki+Manaki", desc: ["Kurinalainen energia on vaikuttavaa.", "Tarvitset öljyn, jossa on sekä voimaa että rakennetta.", "Koroneiki+Manaki tekee siitä helppoa."]},
+            "Kauris-Kaniini": {variety: "Manaki+Athinolia", desc: ["Tyylikäs, tarkka ja harkittu.", "Hienostunut pehmeys viimeistelee kokonaisuuden.", "Manaki+Athinolia tarjoaa jalostunutta tasapainoa."]},
+            "Kauris-Lohikäärme": {variety: "Koroneiki", desc: ["Auktoriteetti näkyy ja kuuluu.", "Öljy saa olla intensiivinen ja ryhdikäs.", "Koroneiki vastaa komennukseen."]},
+            "Kauris-Käärme": {variety: "Manaki", desc: ["Pitkäjänteinen kärsivällisyys palkitaan.", "Hitaasti hyvä tulee – myös öljyssä.", "Manaki kypsyy kauniisti ja pitää linjan."]},
+            "Kauris-Hevonen": {variety: "Koroneiki+Manaki", desc: ["Vapaus on parhaimmillaan, kun siinä on rakenne.", "Tarvitset öljyn, jossa syvyys kantaa.", "Koroneiki+Manaki antaa raamit ja liikkeen."]},
+            "Kauris-Vuohi": {variety: "Asprolia", desc: ["Sitkeys on supervoimasi.", "Kaipaat kestävää, luonteikasta öljyä.", "Asprolia on sinnikäs pari – kuin sinäkin."]},
+            "Kauris-Apina": {variety: "Koroneiki+Manaki", desc: ["Kurinalaisuus + joustavuus = tehokas kombo.", "Tarvitset öljyn, joka mukautuu suunnitelmiin.", "Koroneiki+Manaki hoitaa homman."]},
+            "Kauris-Kukko": {variety: "Athinolia", desc: ["Laatu ensin, tarkkuus aina.", "Hienovarainen viimeistely on tärkeää.", "Athinolia vastaa kunnianhimoosi."]},
+            "Kauris-Koira": {variety: "Manaki", desc: ["Luotettava ja lämmin ote.", "Tarvitset rehdin, tasapainoisen maun.", "Manaki on varma ja vakaa valinta."]},
+            "Kauris-Sika": {variety: "Koroneiki+Manaki", desc: ["Runsaus pysyy kontrollissa.", "Tarvitset rakennetta ilman kankeutta.", "Koroneiki+Manaki pitää tasapainon."]},
+            "Vesimies-Rotta": {variety: "Koroneiki+Manaki", desc: ["Omaperäinen ja utelias.", "Kaipaat makua, joka ei marssi valmiita reittejä.", "Koroneiki+Manaki tekee oman polkunsa."]},
+            "Vesimies-Härkä": {variety: "Manaki", desc: ["Vapaamielinen, mutta tyyni.", "Kaipaat rauhallista voimaa.", "Manaki on lämmin ja järkevä valinta."]},
+            "Vesimies-Tiikeri": {variety: "Koroneiki+Kalamata", desc: ["Visio näkyy pöydässäkin.", "Kaipaat makua, joka erottuu.", "Koroneiki+Kalamata on rohkea ja näyttävä."]},
+            "Vesimies-Kaniini": {variety: "Manaki+Kalamata", desc: ["Lempeys kohtaa vetovoiman.", "Pidät mausta, joka kutsuu mukaan.", "Manaki+Kalamata on lämmin ja helposti lähestyttävä."]},
+            "Vesimies-Lohikäärme": {variety: "Koroneiki+Manaki", desc: ["Katse horisonttiin.", "Kaipaat makua, jossa on suunta ja sisältö.", "Koroneiki+Manaki rakentaa selkeän linjan."]},
+            "Vesimies-Käärme": {variety: "Koroneiki+Manaki", desc: ["Kylmä pää, lämmin maku.", "Pidät kerroksista, jotka pysyvät kurissa.", "Koroneiki+Manaki antaa harkitun syvyyden."]},
+            "Vesimies-Hevonen": {variety: "Koroneiki", desc: ["Riippumaton ja rohkea.", "Kaipaat makua, joka ei jarruta.", "Koroneiki pysyy mukana, vaikka suunta vaihtuu."]},
+            "Vesimies-Vuohi": {variety: "Lianolia", desc: ["Taiteellinen, mutta rakentava.", "Pidät pehmeästä, diplomaattisesta otteesta.", "Lianolia on silkkinen ja tasapainoinen."]},
+            "Vesimies-Apina": {variety: "Asprolia", desc: ["Kekseliäs mieli ja oma polku.", "Kaipaat makua, joka erottuu.", "Asprolia on sitkeä ja omaperäinen."]},
+            "Vesimies-Kukko": {variety: "Koroneiki+Athinolia", desc: ["Selkeä suunta ja siisti toteutus.", "Kaipaat laatua, joka näyttää eteenpäin.", "Koroneiki+Athinolia on fiksu ja visionäärinen."]},
+            "Vesimies-Koira": {variety: "Manaki+Athinolia", desc: ["Uskollinen ja tarkka.", "Kaipaat laatua, jossa on sydän.", "Manaki+Athinolia on lämmin ja huolellinen."]},
+            "Vesimies-Sika": {variety: "Koroneiki+Manaki", desc: ["Anteliaisuus on luontevaa.", "Pidät mausta, jossa on runko.", "Koroneiki+Manaki on lämmin ja täyteläinen."]},
+            "Kalat-Rotta": {variety: "Manaki", desc: ["Herkkyys ja ymmärrys kulkevat yhdessä.", "Kaipaat pehmeää syvyyttä.", "Manaki sulaa kauniisti kokonaisuuteen."]},
+            "Kalat-Härkä": {variety: "Manaki+Athinolia", desc: ["Jalat maassa, katse unelmissa.", "Kaipaat pehmeyttä ja tarkkuutta.", "Manaki+Athinolia on harmoninen ja siro."]},
+            "Kalat-Tiikeri": {variety: "Koroneiki+Manaki", desc: ["Unelma ja voima samassa tarinassa.", "Kaipaat sekä napakkuutta että pehmeyttä.", "Koroneiki+Manaki pitää tasapainon."]},
+            "Kalat-Kaniini": {variety: "Manaki", desc: ["Lempeys on vahvuutesi.", "Kaipaat pehmeää ja lohdullista makua.", "Manaki halaa makunystyröitä."]},
+            "Kalat-Lohikäärme": {variety: "Koroneiki+Manaki", desc: ["Syvä vesi virtaa rauhassa.", "Kaipaat makua, jossa on läsnäoloa.", "Koroneiki+Manaki tuo sekä voimaa että lämpöä."]},
+            "Kalat-Käärme": {variety: "Manaki", desc: ["Hiljainen syvyys.", "Pidät pehmeästä, mutta merkityksellisestä mausta.", "Manaki kuiskaa kauniisti."]},
+            "Kalat-Hevonen": {variety: "Koroneiki+Manaki", desc: ["Vapaus tarvitsee lempeän ankkurin.", "Kaipaat makua, joka pitää pinnalla.", "Koroneiki+Manaki yhdistää lämmön ja rakenteen."]},
+            "Kalat-Vuohi": {variety: "Manaki", desc: ["Luova sydän ja pehmeä käsi.", "Kaipaat öljyä, joka ymmärtää herkkyyden.", "Manaki tukee lempeää ilmaisua."]},
+            "Kalat-Apina": {variety: "Manaki+Kalamata", desc: ["Mielikuvitus tanssii kevyesti.", "Kaipaat siroutta ja lämpöä.", "Manaki+Kalamata on viehättävä pari."]},
+            "Kalat-Kukko": {variety: "Manaki+Athinolia", desc: ["Herkkyys ja täsmällisyys samassa sävyssä.", "Kaipaat hienostunutta otetta.", "Manaki+Athinolia on sulava ja tarkka."]},
+            "Kalat-Koira": {variety: "Manaki", desc: ["Lämmin, aito ja rehellinen.", "Kaipaat makua, joka tuntuu sydämessä.", "Manaki on pehmeä ja luotettava."]},
+            "Kalat-Sika": {variety: "Manaki", desc: ["Empatia, joka riittää kaikille.", "Pidät yltäkylläisestä, mutta lempeästä mausta.", "Manaki on antelias ja lämmin."]}
+        };
+
+        function findOlive() {
+            const western = document.getElementById('western').value;
+            const chinese = document.getElementById('chinese').value;
+
+            if (!western || !chinese) {
+                alert('Valitse molemmat horoskooppimerkit! 🫒');
+                return;
+            }
+
+            // Show loading
+            document.getElementById('quiz').style.display = 'none';
+            document.getElementById('loading').style.display = 'block';
+
+            // Simulate analysis delay for effect
+            setTimeout(() => {
+                const key = `${western}-${chinese}`;
+                const match = oliveMatches[key];
+
+                if (match) {
+                    document.getElementById('zodiacCombo').textContent = `${western} × ${chinese}`;
+                    document.getElementById('varietyName').textContent = match.variety;
+                    
+                    const descriptionsDiv = document.getElementById('descriptions');
+                    descriptionsDiv.innerHTML = '';
+                    match.desc.forEach(sentence => {
+                        const p = document.createElement('p');
+                        p.className = 'description';
+                        p.textContent = sentence;
+                        descriptionsDiv.appendChild(p);
+                    });
+
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('result').style.display = 'block';
+                    updateShareLinks(western, chinese, match.variety, match.desc);
+                } else {
+                    alert('Yhdistelmää ei löytynyt! Kokeile uudelleen.');
+                    resetQuiz();
+                }
+            }, 1500);
+        }
+
+        function resetQuiz() {
+            document.getElementById('western').value = '';
+            document.getElementById('chinese').value = '';
+            document.getElementById('quiz').style.display = 'block';
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('result').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Enable submit button when both selections are made
+        document.getElementById('western').addEventListener('change', checkSelections);
+        document.getElementById('chinese').addEventListener('change', checkSelections);
+
+        function checkSelections() {
+            const western = document.getElementById('western').value;
+            const chinese = document.getElementById('chinese').value;
+            document.getElementById('submitBtn').disabled = !(western && chinese);
+        }
+
+        function urlEncode(str) { return encodeURIComponent(str); }
+
+        function updateShareLinks(western, chinese, variety, descArr) {
+            const baseUrl = location.origin + location.pathname;
+            const descText = Array.isArray(descArr) ? descArr.join(' ') : '';
+            // Limit length for platforms like Twitter/Bluesky
+            const clippedDesc = descText.length > 220 ? (descText.slice(0, 217) + '…') : descText;
+            const text = `${western} × ${chinese} – suositus: ${variety}. ${clippedDesc}`;
+            const shareUrl = baseUrl; // static page; could append params if desired
+
+            const fb = document.getElementById('shareFb');
+            const tw = document.getElementById('shareTw');
+            const bs = document.getElementById('shareBsky');
+            const ln = document.getElementById('shareLn');
+
+            if (fb) fb.href = `https://www.facebook.com/sharer/sharer.php?u=${urlEncode(shareUrl)}&quote=${urlEncode(text)}`;
+            if (tw) tw.href = `https://twitter.com/intent/tweet?text=${urlEncode(text)}&url=${urlEncode(shareUrl)}`;
+            if (bs) bs.href = `https://bsky.app/intent/compose?text=${urlEncode(text + ' ' + shareUrl)}`;
+            if (ln) ln.href = `https://www.linkedin.com/sharing/share-offsite/?url=${urlEncode(shareUrl)}`;
+        }
+
+        // Initialize button state
+        checkSelections();
+    </script>
+  
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+    import { getAnalytics, isSupported } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAAdt_BdwT1UTP1YGv8ZGHphBJhaxQp1cs",
+      authDomain: "oilizodiac.firebaseapp.com",
+      projectId: "oilizodiac",
+      storageBucket: "oilizodiac.firebasestorage.app",
+      messagingSenderId: "588628386844",
+      appId: "1:588628386844:web:94f57de658242a73202bd9",
+      measurementId: "G-ZQXQ4731PY"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    if (await isSupported().catch(() => false)) {
+      getAnalytics(app);
+    }
+  </script>
+</body>
+</html>

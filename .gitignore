@@ -1,0 +1,23 @@
+# Secrets
+.env.local
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+
+# Firebase local cache
+.firebase/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Builds (not used but future-proof)
+dist/
+build/
+
+# Misc
+assets/.DS_Store
